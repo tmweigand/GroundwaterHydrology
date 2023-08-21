@@ -1,0 +1,1356 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "2/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+189
+(
+    inlet
+    {
+        type            patch;
+        nFaces          2216;
+        startFace       809217;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       811433;
+    }
+    xpositive
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1805;
+        startFace       811433;
+    }
+    xnegative
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       813238;
+    }
+    ypositive
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2068;
+        startFace       813238;
+    }
+    ynegative
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       815306;
+    }
+    sphere1
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       815306;
+    }
+    sphere2
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       815306;
+    }
+    sphere3
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          6081;
+        startFace       815306;
+    }
+    sphere4
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere5
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere6
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere7
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere8
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere9
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere10
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere11
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       821387;
+    }
+    sphere12
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          5884;
+        startFace       821387;
+    }
+    sphere13
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          6668;
+        startFace       827271;
+    }
+    sphere14
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       833939;
+    }
+    sphere15
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          219;
+        startFace       833939;
+    }
+    sphere16
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       834158;
+    }
+    sphere17
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       834158;
+    }
+    sphere18
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          7512;
+        startFace       834158;
+    }
+    sphere19
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       841670;
+    }
+    sphere20
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       841670;
+    }
+    sphere21
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       841670;
+    }
+    sphere22
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       841670;
+    }
+    sphere23
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          5099;
+        startFace       841670;
+    }
+    sphere24
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          570;
+        startFace       846769;
+    }
+    sphere25
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere26
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere27
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere28
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere29
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere30
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere31
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere32
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere33
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere34
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere35
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere36
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere37
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere38
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere39
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere40
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere41
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere42
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere43
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere44
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere45
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       847339;
+    }
+    sphere46
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          8405;
+        startFace       847339;
+    }
+    sphere47
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       855744;
+    }
+    sphere48
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          6235;
+        startFace       855744;
+    }
+    sphere49
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2126;
+        startFace       861979;
+    }
+    sphere50
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere51
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere52
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere53
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere54
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere55
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere56
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere57
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864105;
+    }
+    sphere58
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          407;
+        startFace       864105;
+    }
+    sphere59
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864512;
+    }
+    sphere60
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864512;
+    }
+    sphere61
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864512;
+    }
+    sphere62
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          15;
+        startFace       864512;
+    }
+    sphere63
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       864527;
+    }
+    sphere64
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4800;
+        startFace       864527;
+    }
+    sphere65
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       869327;
+    }
+    sphere66
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       869327;
+    }
+    sphere67
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          7202;
+        startFace       869327;
+    }
+    sphere68
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          13449;
+        startFace       876529;
+    }
+    sphere69
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          8790;
+        startFace       889978;
+    }
+    sphere70
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       898768;
+    }
+    sphere71
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       898768;
+    }
+    sphere72
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       898768;
+    }
+    sphere73
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       898768;
+    }
+    sphere74
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          543;
+        startFace       898768;
+    }
+    sphere75
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       899311;
+    }
+    sphere76
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          7574;
+        startFace       899311;
+    }
+    sphere77
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       906885;
+    }
+    sphere78
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       906885;
+    }
+    sphere79
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4419;
+        startFace       906885;
+    }
+    sphere80
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere81
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere82
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere83
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere84
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere85
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere86
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       911304;
+    }
+    sphere87
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          7494;
+        startFace       911304;
+    }
+    sphere88
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       918798;
+    }
+    sphere89
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          6931;
+        startFace       918798;
+    }
+    sphere90
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          5476;
+        startFace       925729;
+    }
+    sphere91
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       931205;
+    }
+    sphere92
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       931205;
+    }
+    sphere93
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       931205;
+    }
+    sphere94
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2778;
+        startFace       931205;
+    }
+    sphere95
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          7126;
+        startFace       933983;
+    }
+    sphere96
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere97
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere98
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere99
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere100
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere101
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere102
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere103
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere104
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere105
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere106
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere107
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere108
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere109
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere110
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere111
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere112
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere113
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere114
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere115
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere116
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere117
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere118
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       941109;
+    }
+    sphere119
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          4027;
+        startFace       941109;
+    }
+    sphere120
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       945136;
+    }
+    sphere121
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          1574;
+        startFace       945136;
+    }
+    sphere122
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       946710;
+    }
+    sphere123
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          314;
+        startFace       946710;
+    }
+    sphere124
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       947024;
+    }
+    sphere125
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       947024;
+    }
+    sphere126
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       947024;
+    }
+    sphere127
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       947024;
+    }
+    sphere128
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       947024;
+    }
+    sphere129
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2708;
+        startFace       947024;
+    }
+    sphere130
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere131
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere132
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere133
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere134
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere135
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere136
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere137
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere138
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere139
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       949732;
+    }
+    sphere140
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          439;
+        startFace       949732;
+    }
+    sphere141
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       950171;
+    }
+    sphere142
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       950171;
+    }
+    sphere143
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2954;
+        startFace       950171;
+    }
+    sphere144
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere145
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere146
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere147
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere148
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere149
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere150
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere151
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere152
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953125;
+    }
+    sphere153
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          58;
+        startFace       953125;
+    }
+    sphere154
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere155
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere156
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere157
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere158
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere159
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere160
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere161
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere162
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere163
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       953183;
+    }
+    sphere164
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          3340;
+        startFace       953183;
+    }
+    sphere165
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956523;
+    }
+    sphere166
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956523;
+    }
+    sphere167
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          243;
+        startFace       956523;
+    }
+    sphere168
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere169
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere170
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere171
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere172
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere173
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere174
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere175
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere176
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere177
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere178
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       956766;
+    }
+    sphere179
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          3092;
+        startFace       956766;
+    }
+    sphere180
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          0;
+        startFace       959858;
+    }
+    procBoundary5to1
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2510;
+        startFace       959858;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        5;
+        neighbProcNo    1;
+    }
+    procBoundary5to4
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2376;
+        startFace       962368;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        5;
+        neighbProcNo    4;
+    }
+    procBoundary5to7
+    {
+        type            processor;
+        inGroups        1(processor);
+        nFaces          2671;
+        startFace       964744;
+        matchTolerance  0.0001;
+        transform       unknown;
+        myProcNo        5;
+        neighbProcNo    7;
+    }
+)
+
+// ************************************************************************* //

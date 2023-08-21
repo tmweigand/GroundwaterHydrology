@@ -1,0 +1,244 @@
+HistogramUxZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           Ux;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramUyZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           Uy;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramUzZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           Uz;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+
+
+HistogramvixZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           vix;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramviyZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           viy;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramvizZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           viz;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+
+HistogramuixZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           uix;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramuiyZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           uiy;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+HistogramuizZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           uiz;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+
+
+Histogramui_massZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           ui_massx;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+Histogramui_massyZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           ui_massy;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+Histogramui_masszZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           ui_massz;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+
+Histogramv_curlxZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           v_curlx;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+Histogramv_curlyZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           v_curly;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+Histogramv_curlzZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           v_curlz;
+  setFormat       gnuplot;
+  min             1.e-8;
+  max             1.e-1;
+}
+
+Histogramw_AZone4
+{
+  type            histogram;
+  libs            ("libfieldFunctionObjects.so");
+  writeControl    writeTime;
+  writeFields     false;
+  regionType    	cellZone;
+  name 	        	Zone4;
+  nBins           $bins;
+  field           m_A;
+  setFormat       gnuplot;
+  max             1;
+}

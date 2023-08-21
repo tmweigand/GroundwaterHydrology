@@ -1,0 +1,193 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ x 	 5.142130e-01;  // Length of sample
+
+
+actions
+(
+    // wDomain
+    {
+        name    wDomainCellSet;
+        type    cellSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo{
+        box     (0 0 0) ($x $x $x);
+        }
+    }
+    {
+        name    wDomain;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo{
+          set     wDomainCellSet;
+        }
+    }
+
+);
+
+
+
+// actions
+// (
+//     // Zone1
+//     {
+//         name    Zone1CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//         box     (0 0 0) ($x $y3 $x);
+//         }
+//     }
+//     {
+//         name    Zone1;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone1CellSet;
+//         }
+//     }
+//
+//     // Zone2
+//     {
+//         name    Zone2CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//         box     (0. $y_5 0.) ($x $y3_5 $x);
+//         }
+//     }
+//     {
+//         name    Zone2;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone2CellSet;
+//         }
+//     }
+//
+//     // Zone3
+//     {
+//         name    Zone3CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//         box     (0. $y1 0.) ($x $y4 $x);
+//         }
+//     }
+//     {
+//         name    Zone3;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone3CellSet;
+//         }
+//     }
+//
+//     // Zone4
+//     {
+//         name    Zone4CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//         box     (0. $y1_5 0.) ($x $y4_5 $x);
+//         }
+//     }
+//     {
+//         name    Zone4;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone4CellSet;
+//         }
+//     }
+//
+//     // Zone5
+//     {
+//         name    Zone5CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//           box     (0. $y2 0.) ($x $y5 $x);
+//         }
+//     }
+//     {
+//         name    Zone5;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone5CellSet;
+//         }
+//     }
+//
+//     // Zone6
+//     {
+//         name    Zone6CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//           box     (0. $y2_5 0.) ($x $y5_5 $x);
+//         }
+//     }
+//     {
+//         name    Zone6;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone6CellSet;
+//         }
+//     }
+//
+//
+//     // Zone7
+//     {
+//         name    Zone7CellSet;
+//         type    cellSet;
+//         action  new;
+//         source  boxToCell;
+//         sourceInfo{
+//           box     (0. $y3 0.) ($x $y6 $x);
+//         }
+//     }
+//     {
+//         name    Zone7;
+//         type    cellZoneSet;
+//         action  new;
+//         source  setToCellZone;
+//         sourceInfo{
+//           set     Zone7CellSet;
+//         }
+//     }
+//
+// );
+
+
+// ************************************************************************* //

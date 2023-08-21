@@ -1,0 +1,49 @@
+    componetsU
+    {
+      type            components;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      writeFields     false;
+      field           U;
+    }
+
+    componetsvi
+    {
+      type            components;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      writeFields     false;
+      field           vi;
+    }
+
+    componetsui
+    {
+      type            components;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      writeFields     false;
+      field           ui;
+    }
+
+    componetsui_mass
+    {
+      type            components;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      writeFields     false;
+      field           ui_mass;
+    }
+
+    componetsv_curl
+    {
+      type            components;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      writeFields     false;
+      field           v_curl;
+    }

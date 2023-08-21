@@ -1,0 +1,31 @@
+OutletFlux_Zone3
+{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+    log             true;
+    writeControl    writeTime;
+    name            OutletFlux_Zone3;
+    enabled         true;
+    writeFields     false;
+    regionType      sampledSurface;
+    sampledSurfaceDict
+    {
+        type                  plane;
+        planeType             pointAndNormal;
+        pointAndNormalDict
+        {
+            point  (0 $y3 0);
+            normal (0 1 0);
+        };
+        interpolate false;
+    }
+    operation       areaIntegrate;
+    fields
+    (
+        U
+        p_rgh
+        m_A
+        rho
+        v_macro
+    );
+}

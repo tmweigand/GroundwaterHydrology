@@ -1,0 +1,38 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.0                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+
+    class           dictionary;
+    object          transportProperties;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+transportModel  Newtonian;
+rho0		    rho0		    [ 1 -3 0 0 0 0 0 ]	    0.9971;   //Density of Water at 25C
+rho1		    rho1		    [ 0 0 0 0 0 0 0 ]	    0.8414;
+rho2		    rho2		    [ 0 0 0 0 0 0 0 ]	    0.4827;
+rho3		    rho3		    [ 0 0 0 0 0 0 0 ]	    0.8640;
+c_mu		    c_mu 		    [ 1 -1 -1 0 0 0 0 ]	    0.01;     // Viscosity of Water at 25C
+mu0		        mu0 		    [ 0 0 0 0 0 0 0 ]	    -0.1165;
+mu1		        mu1 		    [ 0 0 0 0 0 0 0 ]	    1.318;
+mu2		        mu2 		    [ 0 0 0 0 0 0 0 ]	    -2.636;
+mu3		        mu3 		    [ 0 0 0 0 0 0 0 ]	    11.49;
+D_AB_Coeff	    D_AB_Coeff 	    [ 0 2 -1 0 0 0 0 ]	    1.05e-5;   // CaBr2 at 25C
+
+
+// ************************************************************************* //

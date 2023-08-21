@@ -1,0 +1,155 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  plus                                  |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pimpleDiluteSaltTransport;
+
+startFrom       startTime;
+
+startTime       0.;
+
+stopAt          endTime;
+
+endTime         10000.;
+
+deltaT          1.;
+
+writeControl    timeStep;
+
+writeInterval   10000;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  12;
+
+writeCompression on;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable no;
+
+
+x  1.089358e+00;  // Length of sample
+y  1.089358e+00;  // Width of sample
+z  1.089358e+00;  // Depth of sample
+y1   1.089358e+00;
+y2   2.178716e+00;
+y3   3.268074e+00;
+y4   4.357432e+00;
+y5   5.446790e+00;
+y6   6.536147e+00;
+
+
+bins    50;
+
+
+
+ functions
+ {
+
+   wVolumeAverage
+   {
+      type            volFieldValue;
+      libs            ("libfieldFunctionObjects.so");
+      log             true;
+      writeControl    writeTime;
+      name            wVolumeAverage;
+      enabled         true;
+      writeFields     false;
+      regionType      cellZone;
+      name 	         wDomain;
+      operation       volIntegrate;
+      fields
+      (
+          U
+          p
+          p_rgh
+      );
+   }
+
+InletFlux
+{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+    log             true;
+    writeControl    writeTime;
+    name            OutletFlux_Zone1;
+    enabled         true;
+    writeFields     false;
+    regionType      patch;
+    name            inlet;
+    operation       areaIntegrate;
+    fields
+    (
+        U
+        p
+        p_rgh
+    );
+}
+
+
+OutletFlux
+{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+    log             true;
+    writeControl    writeTime;
+    name            OutletFlux_Zone1;
+    enabled         true;
+    writeFields     false;
+    regionType      patch;
+    name            outlet;
+    operation       areaIntegrate;
+    fields
+    (
+        U
+        p
+        p_rgh
+    );
+}
+
+fieldAverageZone1{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+    log             true;
+    writeControl    writeTime;
+    writeFields     false;
+    regionType    	patch;
+    name 	        	allSolids;
+    operation       areaIntegrate;
+    fields
+    (
+      ten_dot_norm
+      term_1
+      term_2
+      term_3
+      term_4
+      normals
+    );
+}
+
+
+
+}
+
+
+
+
+// ************************************************************************* //

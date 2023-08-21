@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.0                                   |
+|   \\  /    A nd           | Web:      http://www.openfoam.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    root            "";
+    case            "";
+    instance        "";
+    local           "";
+    class           volScalarField;
+    object          m_A;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];         // concentration c is a dimensonless scalar
+
+internalField   uniform 0;
+boundaryField
+{
+
+ "procBoundary.*"
+ {
+  type            processor;
+ value           uniform 0;
+  }
+
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 1;
+	  }
+
+    outlet
+    {
+		type            zeroGradient;
+    }
+
+    xpositive
+    {
+        type            zeroGradient;
+    }
+
+    xnegative
+    {
+        type            zeroGradient;
+    }
+
+    ypositive
+    {
+        type            zeroGradient;
+    }
+
+    ynegative
+    {
+        type            zeroGradient;
+    }
+
+    "allSol.*"
+    {
+        type            zeroGradient;
+    }
+
+}
+
+// ************************************************************************* //

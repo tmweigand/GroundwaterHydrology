@@ -1,0 +1,20 @@
+fieldAverageZone7
+{
+    type            volFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+    log             true;
+    writeControl    writeTime;
+    writeFields     false;
+    regionType    	cellZone;
+    name 	        	Zone7;
+    operation       volIntegrate;
+    fields
+    (
+      p
+      rho
+      v_macro
+      vi_macro
+      w_macro
+      act_macro
+    );
+}
