@@ -8,9 +8,14 @@
 \usepackage{enumerate}
 \pagestyle{empty}
 \usepackage{booktabs}
+\usepackage{enumitem}
 \usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[sectionbib]{natbib}
+\renewcommand{\bibsection}{\section*{References}}
 \setlength\parindent{0pt}
  
+
 \begin{document}
 
 
@@ -18,21 +23,48 @@
 \begin{center}
 \begin{Large}\textbf{ENVR 453: Groundwater Hydrology \\ Assignment 1: Water Balance and Uncertainty} \end{Large}
 \\ \vspace{0.1cm} Timothy M. Weigand \vspace{0.1cm}\\ 
-Out: \today ~~~~~ Due: \today 
+Due: September 7th, 2023
 \end{center}
 
 \vspace{0.2cm}
 
 
 \begin{itemize}
-\item Problem 1 (5 points)
+\item {\bf Problem 1 (5 points) } \\
+Consider a portion of the Haw River basin where the  inflow to the subbasin is the USGS site at Haw River, NC (ID: 02096500) and the outflow to the subbasin is the USGS gauge located near Bynum, NC (ID: 02096960). 
+
+\begin{enumerate}[label=(\roman*)]
+    \item What is the average daily flow (Parameter ID: 00060) for the inflow and outflow to the subbasin on August 22, 2023?
+    \item Determine the average daily flow for the inflow and outflow to the subbasin beginning August 22, 2022 and ending August 22, 2023.  
+    \item Determine the total catchment area of the subbasin from the data available through the USGS. Hints: Look at the site information for drainage area. What are the units? 
+    \item The USGS site at Haw River, NC also contains precipitation data (Parameter ID: 00045). How many inches of rain were recorded from August 22, 2022, through August 22, 2023? 
+    \item Over the same time period, what is the average daily change in storage assuming the only inflows to the subbasin are from rainfall and the Haw River at the Haw River station and the only outflow is the Haw River near Bynum, NC?
+    \item Should other inflows and outflows be considered to improve your estimate? If so which?      
+\end{enumerate}
+
+\item {\bf Problem 2 (5 points) } \\
+According to our reading from \citep{Kampf_Burges_etal_20} (up to Section 3), water balances contain significant amounts of uncertainty. 
+\begin{enumerate}[label=(\roman*)]
+    \item From Problem 1, where are uncertainties introduced? 
+    \item Due to these uncertainties, and other data issues, providing an average change in storage with no uncertainty quantification does not provide a complete description of the subbasin. Take any approach of your choosing to account for the uncertainty and document the method you selected and provide an estimate of the average daily change in storage that accounts for uncertainty. 
+\end{enumerate}
+
+\item {\bf Problem 3 (5 points) } \\
+In this class we will be focusing on mathematical and computational approaches to groundwater hydrology. For this problem, venture outside (or simply look)  at a portion of the hydrologic cycle. This could include going to a river, lake, beach or simply watching a storm pass by from inside. As you observe, think about the water cycle and where the water might be going. Describe what you observe.
+
 \end{itemize}
 
+\bf{Useful Links}:
+\\
+ USGS Site at Haw River: \url{https://waterdata.usgs.gov/monitoring-location/02096500/#parameterCode=00065&period=P7D}
+\\
+ USGS Site near Bynum: \url{https://waterdata.usgs.gov/monitoring-location/02096960/#parameterCode=00065&period=P7D}
+\\
+ dataretrieval package: \url{https://github.com/DOI-USGS/dataretrieval-python}
 
-%  https://waterdata.usgs.gov/monitoring-location/02097464/#parameterCode=00060&period=P365D
-%  https://waterdata.usgs.gov/monitoring-location/02097517/#parameterCode=00060&period=P365D
 
-% Groundwater 
-% https://waterdata.usgs.gov/monitoring-location/355944079013401/#parameterCode=72019&period=P7D
+\bibliographystyle{plain}
+\bibliography{HW1.bib}
+
 
 \end{document}
