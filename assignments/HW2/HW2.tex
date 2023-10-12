@@ -1,0 +1,69 @@
+\documentclass[11pt]{report}
+\usepackage{amsmath}
+\usepackage[notes]{ctmmath-v2}
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=1.5cm]{geometry} %changes margins
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{enumerate}
+\pagestyle{empty}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[sectionbib]{natbib}
+\renewcommand{\bibsection}{\section*{References}}
+\setlength\parindent{0pt}
+ 
+
+\begin{document}
+
+
+
+\begin{center}
+\begin{Large}\textbf{ENVR 453: Groundwater Hydrology \\ Assignment 2: Microscale and Darcy's Law} \end{Large}
+\\ \vspace{0.1cm} Timothy M. Weigand \vspace{0.1cm}\\ 
+Due: September 28th, 2023
+\end{center}
+
+\vspace{0.2cm}
+
+
+\begin{itemize}
+\item {\bf Problem 1 (10 points) } \\
+Analysis of groundwater at the microscale allows for a deeper understanding of flow and transport (the migration of chemical species in the groundwater) at the macroscale. A new groundwater hydrologist wants to explore the relationship between porous media and representative elementary volume (REV) size and developed code to do such. The code consists of: (1) packing grains of sand (circles) inside a domain until a specified porosity is matched while also ensuring that the circles are located completely inside the domain and do not overlap with any other circle. The radii of the circles is sampled from a user-specified distribution and can be uniform, normal, or log-normal; (2) digitizing the domain by breaking it into small squares and then determining if each of the squares is in the water phase or solid phase; (3) sampling the digitized domain and plotting the porosity as a function of area. The code is called \texttt{REV.py} and an example code entitled \texttt{testREV.py} is also included. No modifications to \texttt{REV}.py are required. 
+
+\begin{enumerate}[label=(\roman*)]
+    \item Present and test an approach to ensure that the model is behaving correctly (model validation). 
+    \item Provide a definition for a REV. 
+    \item The model can generate synthetic media where the radii of the circles can be uniform, normal, or log-normally distributed. Select a distribution type and vary the porosity and distribution parameters. Describe what you observe in terms of REV size, how the domains look and the minimum attainable porosity. Include images that support your descriptions. Note that the circle packing portion of the code has maximum run time of two minutes. 
+    \item Select a different distribution and perform the same analysis as in (iii).
+    \item Compare the results from the two different distributions. Does the REV size need to be bigger for one of the distributions? Why or why not?      
+\end{enumerate}
+
+\item {\bf Problem 2 (5 points) } \\
+In class, we derived a form of Darcy's Law, however, there are many different forms of Darcy's Law which can cause confusion. For this problem the objective is to prove that the forms are equivalent. Please show all work!
+
+\begin{enumerate}[label=(\roman*)]
+    \item The one-dimensional pressure form is given as
+    \beq
+        q_z^w = -\frac{k}{\hat{\mu}^w} \lp \pd{p^w}{z} + \rho^w g \rp
+    \eeq
+    where $q_z^w = \gke v_z^w$ is the Darcy velocity in the $z$-direction which is aligned with gravity, $\gke$ is the porosity, $v_z^w$ is the velocity of the water in the $z$-direction, $k$ is the permeability, $\hat{\mu}^w$ is the dynamic viscosity of the water, and $\pd{p^w}{z}$ is the gradient in the pressure. Determine the units of each quantity and prove the equation is dimensionally consistent. 
+    \item The hydraulic conductivity is defined as
+    \beq
+        K = \frac{k \rho^w g}{\hat{\mu}^w}
+    \eeq 
+    Determine the units of hydraulic conductivity. Rearrange the given from of Darcy's Law above to be a function hydraulic conductivity. Are there any advantages or disadvantages to this form? 
+    \item Tracking both pressure and gravitational potential can be inconvient and thus in groundwater, hydraulic head is often used. The hydraulic head is function of pressure head ($\psi$) and elevation head ($z$) and is defined as
+    \beq
+        h = \psi + z = \frac{p^w}{\rho^w g} + z
+    \eeq
+    where $z$ is the elevation above a defined datum. Convert the form of Darcy's Law derived in (ii) to be a function of hydraulic head. Assume the density and gravity are constant.  
+\end{enumerate}
+    
+
+\end{itemize}
+
+
+\end{document}

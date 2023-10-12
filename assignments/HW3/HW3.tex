@@ -1,0 +1,60 @@
+\documentclass[11pt]{report}
+\usepackage{amsmath}
+\usepackage[notes]{ctmmath-v2}
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=1.5cm]{geometry} %changes margins
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage{enumerate}
+\pagestyle{empty}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage[sectionbib]{natbib}
+\renewcommand{\bibsection}{\section*{References}}
+\setlength\parindent{0pt}
+ 
+
+\begin{document}
+
+
+
+\begin{center}
+\begin{Large}\textbf{ENVR 453: Groundwater Hydrology \\ Assignment 3: Groundwater Equation} \end{Large}
+\\ \vspace{0.1cm} Timothy M. Weigand \vspace{0.1cm}\\ 
+Due: October 12th, 2023
+\end{center}
+
+\vspace{0.2cm}
+
+
+\begin{itemize}
+\item {\bf Problem 1 (15 points) } \\
+A community is in need of an additional water source and is considering drilling a new well in the local aquifer. Farmers in the area rely on the aquifer for irrigation and if the average hydraulic head of the aquifer drops below 10\% of the current value, the proposed project will be rejected because this would require the farmers to modify their existing wells and pumps.  
+
+The confined aquifer has a length of 1,000 m and is bound on the left by a lake that maintains a constant head of 100 m and by a steam on the right that also has a steady head of 85 m. 
+Due to the symmetry of the subsurface, a 1-dimensional model should be sufficient to accurately model the system. 
+
+
+\begin{enumerate}[label=(\roman*)]
+    \item Assuming that the hydraulic conductivity ($K$) of the system is 10 m/day and the aquifer has a porosity of 0.3, determine the velocity of the water in the system by only using boundary information. 
+    \item How long does it take water to travel the entire length of the aquifer? 
+    \item Derive the governing equations for this aquifer and explicitly state all assumptions made. You can start with the 1-dimensional groundwater equations which is defined as
+    \beq
+    S_s \pdt{h} - \pd{}{x} \lp K \pd{h}{x} \rp + q = 0
+    \eeq
+    \item For your governing equation, develop a numerical approximation using the finite difference approach using a total of 5 nodes and assume there are no sources or sinks. Formulate your approach such that it is in the form of 
+    \beq
+    \ten A \vec h  = \vec b
+    \eeq
+    \item Implement your finite difference approximation in Python where the boundary conditions, number of nodes, and length of the domain can be specified. 
+    \item A key component of the modeling process is model verification. Prove that your numerical model is accurately solving the governing equation.
+    \item Using you verified model and 251 nodes for your finite difference approximation, determine the maximum pumping rate given the established criteria for the proposed project. Implementation of a well in a finite difference code is non-trivial. To lessen the burden, we will assume that the well is located at x = 400 m (node 100). The units of $q$ are 1/day and to convert this value to a flow rate we need to multiply by a volume. We will assume a volume of 1,000 m$^3$. Perform the same analysis at x = 800 m (node 200). Are the maximum allowable pumping rates the same? Why or why not? 
+
+\end{enumerate}
+
+\end{itemize}
+
+
+\end{document}
